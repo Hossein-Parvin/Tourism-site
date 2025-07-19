@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وبسایت کامل و ریسپانسیو آژانس مسافرتی</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header section starts -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a>
+                <!-- From Uiverse.io by nanda248 -->
+                <label class="switch">
+                    <input type="checkbox" onclick="toggleTheme()">
+                    <span class="slider">
+                        <div class="circle">
+                            <div class="divider"></div>
+                        </div>
+                    </span>
+                </label>
+            </a>
+            <a href="#home">خانه</a>
+            <a href="#book">رزرو</a>
+            <a href="#packages">پکیج‌ها</a>
+            <a href="#services">خدمات</a>
+            <a href="#gallery">گالری</a>
+            <a href="#review">نظرات</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="جستجوی مقصد">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form container -->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>ورود</h3>
+            <input type="email" class="box" placeholder="ایمیل خود را وارد کنید">
+            <input type="password" class="box" placeholder="رمز عبور خود را وارد کنید">
+            <input type="submit" value="ورود" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">مرا به خاطر بسپار</label>
+            <p>رمز عبور خود را فراموش کرده‌اید؟ <a href="#">اینجا کلیک کنید</a></p>
+            <p>حساب کاربری ندارید؟ <a href="#">اکنون ثبت‌نام کنید</a></p>
+        </form>
+    </div>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>ماجراجویی ارزشمند است</h3>
+            <p>با خدمات حرفه‌ای ما، مقاصد خیره‌کننده را کاوش کنید و خاطراتی فراموش‌نشدنی بسازید.</p>
+            <a href="#" class="btn">بیشتر بدانید</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- book section starts -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/book-img.svg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>به کجا سفر می‌کنید؟</h3>
+                    <input type="text" placeholder="مقصد">
+                </div>
+                <div class="inputBox">
+                    <h3>چند نفر هستید؟</h3>
+                    <input type="number" placeholder="تعداد مسافران">
+                </div>
+                <div class="inputBox">
+                    <h3>تاریخ ورود</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>تاریخ خروج</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="اکنون رزرو کنید">
+            </form>
+        </div>
+    </section>
+    <!-- book section ends -->
+
+    <!-- packages section starts -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> بمبئی</h3>
+                    <p>با پکیج تور شهری ما، فرهنگ پویا و بازارهای شلوغ بمبئی را تجربه کنید.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">90.00 دلار <span>120.00 دلار</span></div>
+                    <a href="#" class="btn">اکنون رزرو کنید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> هاوایی</h3>
+                    <p>با پکیج تعطیلات استوایی ما، در سواحل بکر هاوایی استراحت کنید و مناظر آتشفشانی را کاوش کنید.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">90.00 دلار <span>120.00 دلار</span></div>
+                    <a href="#" class="btn">اکنون رزرو کنید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> سیدنی</h3>
+                    <p>با پکیج ماجراجویی سیدنی، اپرای معروف سیدنی و ساحل بوندی را کشف کنید.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">90.00 دلار <span>120.00 دلار</span></div>
+                    <a href="#" class="btn">اکنون رزرو کنید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> پاریس</h3>
+                    <p>با تور منتخب ما از برج ایفل و موزه لوور، در جذابیت رمانتیک پاریس غرق شوید.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">90.00 دلار <span>120.00 دلار</span></div>
+                    <a href="#" class="btn">اکنون رزرو کنید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> توکیو</h3>
+                    <p>با تورهای هدایت‌شده ما از معابد و آسمان‌خراش‌ها، ترکیب سنت و مدرنیته در توکیو را کاوش کنید.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">90.00 دلار <span>120.00 دلار</span></div>
+                    <a href="#" class="btn">اکنون رزرو کنید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> مصر</h3>
+                    <p>با پکیج اختصاصی اهرام و کروز رود نیل، اسرار مصر باستان را کشف کنید.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">90.00 دلار <span>120.00 دلار</span></div>
+                    <a href="#" class="btn">اکنون رزرو کنید</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- packages section ends -->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>هتل‌های مقرون‌به‌صرفه</h3>
+                <p>ما با هتل‌های برتر جهانی همکاری می‌کنیم تا اقامتگاه‌هایی راحت و اقتصادی متناسب با نیازهای سفر شما
+                    ارائه دهیم.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>غذا و نوشیدنی</h3>
+                <p>از تجربه‌های غذایی منتخب با غذاهای محلی و طعم‌های بین‌المللی در هر مقصد لذت ببرید.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>راهنمای ایمنی</h3>
+                <p>راهنمایان متخصص ما با نکات جامع سفر و پشتیبانی 24/7، ایمنی شما را تضمین می‌کنند.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>جهان‌گردی</h3>
+                <p>با شبکه جهانی تورها و خدمات مسافرتی ما، به‌راحتی در قاره‌های مختلف سفر کنید.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>سریع‌ترین سفر</h3>
+                <p>با رزرو سریع‌ترین پروازها و گزینه‌های حمل‌ونقل، زمان خود را در هر مقصد به حداکثر برسانید.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>ماجراجویی</h3>
+                <p>با فعالیت‌های هیجان‌انگیز مانند کوهنوردی، غواصی و تورهای فرهنگی، ماجراجویی فراموش‌نشدنی را تجربه
+                    کنید.</p>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends -->
+
+    <!-- gallery section starts -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/g-1.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>با تجربه‌های مسافرتی منتخب ما، مناظر خیره‌کننده و نقاط دیدنی را کشف کنید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-2.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>با پکیج‌های اختصاصی ما، شهرهای پویا و جواهرات پنهان را کاوش کنید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-3.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>با تورهای هدایت‌شده ما، در زیبایی طبیعت و فرهنگ غرق شوید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-4.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>با برنامه‌ریزان حرفه‌ای سفر ما، زیباترین مقاصد جهان را تجربه کنید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-5.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>به مکان‌های نمادین سفر کنید و خاطراتی ماندگار خلق کنید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-6.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>با برنامه‌های سفری شخصی‌سازی‌شده ما، شگفتی‌های جهان را کشف کنید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-7.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>با پکیج‌های تور همه‌جانبه ما، به مقاصد خارق‌العاده سفر کنید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-8.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>با تورهای حرفه‌ای ما، زیبایی مقاصد جهانی را کاوش کنید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-9.jpg" alt="">
+                <div class="content">
+                    <h3>مکان‌های شگفت‌انگیز</h3>
+                    <p>با تجربه‌های سفری شخصی‌سازی‌شده ما، شگفتی‌های جهان را کشف کنید.</p>
+                    <a href="#" class="btn">بیشتر ببینید</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery section ends -->
+
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic1.png" alt="">
+                        <h3>امیر حسینی</h3>
+                        <p>سفر ما به پاریس فوق‌العاده بود! تیم همه‌چیز را به‌خوبی برنامه‌ریزی کرده بود، از هتل تا تورهای
+                            هدایت‌شده. بسیار توصیه می‌کنم!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic2.png" alt="">
+                        <h3>مریم احمدی</h3>
+                        <p>پکیج هاوایی رویایی بود. سواحل خیره‌کننده و برنامه‌ریزی دقیق، تجربه‌ای بی‌نظیر بود. حتماً
+                            دوباره رزرو می‌کنم!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic3.png" alt="">
+                        <h3>علی محمدی</h3>
+                        <p>سفر به توکیو با این آژانس بسیار روان بود. راهنمایان آگاه بودند و تجربه‌ای فراموش‌نشدنی رقم
+                            زدند.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic4.png" alt="">
+                        <h3>زهرا رضایی</h3>
+                        <p>تور مصر تجربه‌ای بی‌نظیر بود. کروز رود نیل و بازدید از اهرام به‌خوبی برنامه‌ریزی شده بود!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="نام">
+                    <input type="email" placeholder="ایمیل">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="شماره تلفن">
+                    <input type="text" placeholder="موضوع">
+                </div>
+                <textarea placeholder="پیام شما" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="ارسال پیام">
+            </form>
+        </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- brand section -->
+    <section class="brand-container">
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>درباره ما</h3>
+                <p>ما یک آژانس مسافرتی پیشرو هستیم که به خلق تجربه‌های سفری فراموش‌نشدنی اختصاص دارد. تیم متخصص ما
+                    برنامه‌های سفری شخصی‌سازی‌شده به مقاصد برتر جهانی ارائه می‌دهد و راحتی، ایمنی و ماجراجویی را تضمین
+                    می‌کند.</p>
+            </div>
+            <div class="box">
+                <h3>شعبه‌ها</h3>
+                <a href="#">هند</a>
+                <a href="#">لندن</a>
+                <a href="#">ژاپن</a>
+                <a href="#">فرانسه</a>
+            </div>
+            <div class="box">
+                <h3>لینک‌های سریع</h3>
+                <a href="#">خانه</a>
+                <a href="#">رزرو</a>
+                <a href="#">پکیج‌ها</a>
+                <a href="#">خدمات</a>
+                <a href="#">گالری</a>
+                <a href="#">نظرات</a>
+                <a href="#">تماس با ما</a>
+            </div>
+            <div class="box">
+                <h3>ما را دنبال کنید</h3>
+                <a href="#">فیسبوک</a>
+                <a href="#">اینستاگرام</a>
+                <a href="#">توییتر</a>
+                <a href="#">لینکدین</a>
+            </div>
+        </div>
+        <h1 class="credit">طراحی شده توسط <span><a target="_blank" href="https://noavar.dev">نوآور</a></span> | کلیه
+            حقوق محفوظ است</h1>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
+</html>
