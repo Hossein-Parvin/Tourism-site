@@ -4,7 +4,7 @@
 <div style="display:flex;justify-contect:center;" align=center>
 <h3>
 
-<pre style="color:red">https://github.com/Hossein-Parvin/Tourism-site</pre>
+<pre style="color:red">https://hossein-parvin.github.io/Educational-site/</pre>
   </h3>
   
 </div>
